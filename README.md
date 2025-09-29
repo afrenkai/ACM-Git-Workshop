@@ -10,8 +10,6 @@
 - `git clone`: copies a remote repository(codebase) to your local machine. Any changes made will only be reflected on the remote one if you `git add` them, `git commit` them, and `git commit them`. You should have 1 `branch`, `main`
 
 
-# Part 0
-
 # Part 1 Instructions:
 - `git clone` this repository
 - `git checkout` your own branch from this repository using `git checkout -b <name of your branch>`
