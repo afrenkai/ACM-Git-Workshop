@@ -1,8 +1,6 @@
 
 # Prerequisites:
 - `git`
-
-
 - an `ssh` key (`ssh-keygen`) on POSIX systems, (idx on Windows, will edit whenever I get a Win machine to mess around with) linked to your GitHub account, so you can push and pull to and from this repository. 
 
 # Introduction
@@ -13,6 +11,24 @@
 # Part 1 Instructions:
 - `git clone` this repository
 - `git checkout` your own branch from this repository using `git checkout -b <name of your branch>`
+Now, add your name to `inconspicuous_file.txt` and `add`, `commit`, and `push` this to your branch.
+I will make a slight change to this file on my end, and you will try and merge main into your branch.
+- `git pull` will get all changes from all branches (gets change from remote main to local main branch)
+- `git merge main` will attempt to merge the `main` branch's `inconspicuous file` with yours
+
+However, this will fail. Open the file in your text editor (NOT IDE) of choice (v*m, n*no, em*cs, n*tep*d, etc...) and you should see something like :
+
+```
+<<<<<<< HEAD
+========
+stuff you did
+>>>>>>> main
+stuff I did
+```
+- fix it by removing the arrows and miscellaneous symbols. 
+- then, you should be able to run the `git merge main` command properly, then run `git add inconspicuous_file.txt`, `git commit -m "<something"`, and `git push` to have this reflected in your branch. 
+
+# Part 2 Instructions (If Time)
 Uh oh! There seems to be a `.env` with company secrets! We might lose $0.03 if this stays in the repository! Quick! 
 - First, remove the file from git with `git rm .env`
 
@@ -55,22 +71,6 @@ git add .gitignore
 git commit -m "I'm a big dummy and forgot to gitignore my .env"
 git push 
 ```
-# Part 2 Instructions (If Time)
-Now, add your name to `inconspicuous_file.txt` and `add`, `commit`, and `push` this to your branch.
-I will make a slight change to this file on my end, and you will try and merge main into your branch.
-- `git pull` will get all changes from all branches (gets change from remote main to local main branch)
-- `git merge main` will attempt to merge the `main` branch's `inconspicuous file` with yours
 
-However, this will fail. Open the file in your text editor (NOT IDE) of choice (v*m, n*no, em*cs, n*tep*d, etc...) and you should see something like :
-
-```
-<<<<<<< HEAD
-========
-stuff you did
->>>>>>> main
-stuff I did
-```
-- fix it by removing the arrows and miscellaneous symbols. 
-- then, you should be able to run the `git merge main` command properly, then run `git add inconspicuous_file.txt`, `git commit -m "<something"`, and `git push` to have this reflected in your branch. 
 - Finally, file a pull request (refer to slides)
 
