@@ -1,7 +1,7 @@
 
 # Prerequisites:
 - `git`
-- ['uv'](https://docs.astral.sh/uv/getting-started/installation/)
+- [uv](https://docs.astral.sh/uv/getting-started/installation/)
 - an `ssh` key (`ssh-keygen`) on POSIX systems, (idx on Windows, will edit whenever I get a Win machine to mess around with) linked to your GitHub account, so you can push and pull to and from this repository. 
 
 # Part 1 Instructions:
