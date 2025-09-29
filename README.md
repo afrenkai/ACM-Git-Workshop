@@ -1,4 +1,3 @@
-
 # Prerequisites:
 - `git`
 - an `ssh` key (`ssh-keygen`) on POSIX systems, (idx on Windows, will edit whenever I get a Win machine to mess around with) linked to your GitHub account, so you can push and pull to and from this repository. 
@@ -71,6 +70,5 @@ git add .gitignore
 git commit -m "I'm a big dummy and forgot to gitignore my .env"
 git push 
 ```
-
 - Finally, file a pull request (refer to slides)
 
