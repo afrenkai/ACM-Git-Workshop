@@ -61,7 +61,7 @@ I will make a slight change to this file on my end, and you will try and merge m
 - `git pull` will get all changes from all branches (gets change from remote main to local main branch)
 - `git merge main` will attempt to merge the `main` branch's `inconspicuous file` with yours
 
-However, this will fail. Open the file in your text editor (NOT IDE) of choice (v*m, n*no, em*cs, n*tep*d, etc...) and you should see something like :
+However, this will fail. Open the file in your text editor (NOT IDE) of choice (v-m, n-no, em-cs, n-tep-d, etc...) and you should see something like :
 
 ```
 <<<<<<< HEAD
