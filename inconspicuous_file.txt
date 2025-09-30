@@ -1,5 +1,3 @@
-<<<<<<< HEAD
 hi this is Jonathan
-=======
 artem frenk
->>>>>>> main
+
